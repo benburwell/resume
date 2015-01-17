@@ -1,0 +1,67 @@
+% Ben Burwell Resume
+
+\documentclass[11pt]{article}
+
+% Use nice margins
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+
+% Allow us to use a black cell background
+\usepackage[table]{xcolor}
+
+% Allow us to use white text
+\usepackage{color}
+\definecolor{white}{rgb}{1.0,1.0,1.0}
+
+% Make a custom column type that is 100% wide and centered
+\usepackage{tabularx}
+\newcolumntype{N}{>{\centering\arraybackslash}X}%
+
+\begin{document}
+
+% Get rid of page numbers
+\thispagestyle{empty}
+
+% Heading
+\noindent\begin{tabularx}{\textwidth}{|N|}
+  \rowcolor{black}{\color{white}{\LARGE\textbf{Ben Burwell}}} \\
+  Seegers Union Box 2559 / 2400 West Chew Street / Allentown, PA 18104 \\
+  hi@benburwell.com / www.benburwell.com / (609) 405--1361 \\
+  \hline
+\end{tabularx}
+
+\section*{Skills}
+\begin{itemize}
+  \item \textbf{Frontend:} XHTML, HTML5, CSS3, JavaScript, jQuery, Angular
+  \item \textbf{Full-Stack:} PHP/MySQL, Node.js/Express/MongoDB
+  \item \textbf{Backend:} C, Ruby, Java, actionhero.js
+  \item \textbf{Tools/Platforms:} Heroku, git (GitHub and Atlassian Stash), Jenkins CI, Debian Linux, OS X
+\end{itemize}
+
+\section*{Education}
+\begin{itemize}
+  \item \textbf{Muhlenberg College} Allentown, PA --- expected 2015 \\
+    B.S. in Computer Science, minor in Mathematics 
+\end{itemize}
+
+\section*{Experience}
+\begin{itemize}
+  \item \textbf{Lutron Electronics --- Software Engineering Intern} --- Coopersburg, PA (summer 2014) \\
+    Extended existing open-source software to support proprietary protocols. Managed all aspects of the project including creating design documentation, setting up SCM, and designing and maintaining CI/CD workflows. Presented demonstrations of the software and training on its use to a wide variety of stakeholders across the company.
+  \item \textbf{Muhlenberg College --- Peer Tutor} --- Allentown, PA (2012--present) \\
+    Provide one-on-one academic support to computer science students in weekly tutoring sessions and communicate with professors and the Academic Resource Center regarding student progress. Lead semiweekly content workshops to review class material for Computer Science I and II. Attending regular training seminars led to certification from the College Reading and Learning Association.
+  \item \textbf{Muhlenberg College --- Sound Technician} --- Allentown, PA (2012--present) \\
+    Provide live sound mixing for student and guest performers at a variety of events throughout the year. Understand the needs of performers in order to set up and configure sound systems to accomodate them.
+  \item \textbf{Self-Employed --- Full Stack Web Designer and Developer} (2010--present) \\
+    Work with clients to understand needs, create compelling interactive experiences, provide standards-compliant implementations using current web practices, and deliver ongoing support.
+  \item \textbf{Princeton Day School --- Technical Support Specialist} --- Princeton, NJ (2008--2011) \\
+    Provided technical support to students and teachers using Apple desktops and laptops on the school network using Apple Remote Desktop, Workgroup Manager, and Server Admin. Performed maintenance including cleaning, imaging, and hardware upgrades on school workstations.
+\end{itemize}
+
+\section*{Activities and Honors}
+\begin{itemize}
+  \item \textbf{Omicron Delta Kappa National Leadership Honor Society}
+  \item \textbf{Volunteer Emergency Medical Technician} at Pennington First Aid Squad, Muhlenberg College EMS
+  \item \textbf{Dean's List} at Muhlenberg College (each semester)
+\end{itemize}
+
+\end{document}
