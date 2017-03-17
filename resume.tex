@@ -1,22 +1,11 @@
-% Ben Burwell Resume
+% vim: :set spell:
 
 \documentclass[11pt]{article}
 
 % Use nice margins
 \usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
-
 \usepackage[largesmallcaps]{kpfonts}
-
-% Allow us to use a black cell background
-\usepackage[table]{xcolor}
-
-% Allow us to use white text
-\usepackage{color}
-\definecolor{white}{rgb}{1.0,1.0,1.0}
-
-% Make a custom column type that is 100% wide and centered
-\usepackage{tabularx}
-\newcolumntype{N}{>{\centering\arraybackslash}X}%
+\usepackage[utf8]{inputenc}
 
 % Use links
 \usepackage[hidelinks]{hyperref}
@@ -25,36 +14,40 @@
   pdfauthor={Ben Burwell}
 }
 
+\setlength{\parindent}{0em}
+
 \begin{document}
 
 % Get rid of page numbers
 \thispagestyle{empty}
 
 % Heading
-\noindent\begin{tabularx}{\textwidth}{|N|}
-  \rowcolor{black}{\color{white}{\LARGE\textsc{\textbf{Ben Burwell}}}} \\
-  1331 North 14th Street Apartment L15 --- Whitehall, PA 18052 \\
-  \href{mailto:resume@benburwell.com}{resume@benburwell.com} --- \href{https://www.benburwell.com/}{www.benburwell.com} --- (609) 405--1361 \\
-  \hline
-\end{tabularx}
+\begin{center}
+  {\LARGE\textsc{\textbf{Ben Burwell}}}
+\end{center}
+\begin{center}
+  \href{mailto:resume@benburwell.com}{resume@benburwell.com} • \href{https://www.benburwell.com/}{www.benburwell.com} • (609) 405--1361 • \href{https://github.com/benburwell}{github.com/benburwell} \\
+  \hrulefill
+\end{center}
 
 
 
-\section*{Experience}
+\section*{Professional Experience}
 \begin{itemize}
   \item \textbf{Associate Developer} at \textbf{Trifecta Technologies} --- Allentown, PA \hfill {\em July 2015--present} \\
-    Designed, rapidly prototyped, implemented, and tested specification-compliant software to be delivered to clients.
-    Delved into and understood complex business processes to optimize application performance.
-    Quickly developed expertise in new languages, tools, and platforms as needed for customer projects.
-    Communicated effectively with internal and client stakeholders to determine business requirements and document technical solutions.
-    Streamlined, consolidated, and automated frontend build processes.
-    Wrote and maintained an in-house utility to speed up common development tasks, and contributed to several others.
+    Designed, prototyped, implemented, tested, and deployed specification-compliant software.
+    Quickly developed expertise in new languages, tools, and platforms as needed for client projects.
+    Communicated with internal and client stakeholders to determine business requirements and document technical solutions.
+    Efficiently investigated and resolved issues arising in clients' production environments.
+    Created and contributed to internal tooling to increase productivity when developing on the Salesforce platform.
+    Designed and configured CI workflows with Bamboo.
 
   \item \textbf{Software Engineering Intern} at \textbf{Lutron Electronics} --- Coopersburg, PA \hfill {\em summer 2014} \\
-    Wrote an in-house serial and TCP/IP network analysis tool for proprietary protocols to provide real-time insight into network activity during development,
-    as well as providing tracability and verification for automated testing processes.
-    Created design documentation, and designed and implemented continuous integration/deployment workflows.
-    Presented demonstrations of the software and training on its use to stakeholders across the company.
+    Created Wireshark dissectors for proprietary network protocols to aid in diagnosing behavior during development and testing.
+    Wrote external software to facilitate capture of serial data and created a plugin to stream the data for realtime analysis in Wireshark.
+    Worked with the test team to integrate automated network captures with existing automated testing processes.
+    Designed the technical solution, created design documentation, and provided a framework for future enhancement by implementing continuous integration/deployment workflows with Jenkins and git.
+    Demonstrated applications of Wireshark to teams throughout the company, including software development, testing, and field service.
     Delivered a final presentation for review by senior technical staff.
 
   \item \textbf{Technical Support Specialist} at \textbf{Princeton Day School} --- Princeton, NJ \hfill {\em 2008--2011} \\
@@ -66,28 +59,29 @@
 
 \section*{Education}
 \begin{itemize}
-  \item \textbf{Muhlenberg College} --- Allentown, PA \hfill {\em May 2015} \\
-  B.S. in Computer Science; Mathematics minor. {\em Magna cum laude} (3.718); with Honors in Computer Science.
+  \item \textbf{B.S. Computer Science} at \textbf{Muhlenberg College} --- Allentown, PA \hfill {\em May 2015} \\
+  {\em Magna cum laude} (3.718) with Honors in Computer Science. Mathematics minor.
 \end{itemize}
 
 
 
 \section*{Technical Skills}
 \begin{itemize}
-  \item \textbf{Expert:} Node.js/JavaScript, Apex/Visualforce, HTML, CSS
-  \item \textbf{Practitioner:} Java, PostgreSQL, git, shell scripting, Angular, React, Redux
-  \item \textbf{Currently Learning:} Swift/iOS development, Angular 2, Golang
+  \item \textbf{Expert:} Node.js/JavaScript, Heroku, Apex/Visualforce, HTML, CSS
+  \item \textbf{Practitioner:} Java, PostgreSQL, git, shell scripting, Angular, React, Redux, GNU/Linux, Jenkins, Bamboo
+  \item \textbf{Novice:} Golang, Python, Ruby, C, LaTeX, Docker
+  \item \textbf{Currently Learning:} Swift/iOS development, Angular 2
   \item \textbf{Areas of Interest:} Cryptography, Information Security, Mathematics, Public Health
 \end{itemize}
 
 
 
-\section*{Certifications and Honors}
+\section*{Certifications and Memberships}
 \begin{itemize}
-  \item \textbf{Salesforce Certified Developer}
-  \item \textbf{Pi Mu Epsilon National Honorary Mathematics Society}
-  \item \textbf{Omicron Delta Kappa National Leadership Honor Society}
-  \item \textbf{Certified Emergency Medical Technician (EMT)}
+  \item Salesforce Certified Developer
+  \item Pi Mu Epsilon National Honorary Mathematics Society
+  \item Omicron Delta Kappa National Leadership Honor Society
+  \item Certified Emergency Medical Technician (EMT)
 \end{itemize}
 
 \end{document}
