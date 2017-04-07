@@ -13,3 +13,5 @@ publish: resume.pdf
 	done
 	cd $(SITE) && git commit -am "Update resume"
 	cd $(SITE) && git push origin master
+
+.PHONY: publish
