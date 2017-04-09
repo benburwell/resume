@@ -8,10 +8,6 @@ publish: resume.pdf
 	for dest in $(DESTINATIONS); do \
 		cp resume.pdf "$$dest" ; \
 	done
-	for dest in $(DESTINATIONS); do \
-		cd $(SITE) && git add "$$dest" ; \
-	done
-	cd $(SITE) && git commit -am "Update resume"
-	cd $(SITE) && git push origin master
+	echo "Resume PDF has been copied to $(SITE)"
 
 .PHONY: publish
